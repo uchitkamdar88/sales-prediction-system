@@ -1,0 +1,35 @@
+data:
+  path: "data/sales_data.csv"
+  target_column: "Profit"
+  feature_columns:
+    - "R&D_Spend"
+    - "Administration"
+    - "Marketing_Spend"
+
+model:
+  type: "xgboost"   # or "gradient_boosting", "linear"
+  hyperparameters:
+    n_estimators: 200
+    max_depth: 5
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    random_state: 42
+
+training:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
+  auto_retrain_days: 7   # retrain every week (for cron jobs)
+
+prediction:
+  enable_what_if: true
+  enable_batch_upload: true
+
+ui:
+  title: "Advanced Sales Prediction System"
+  theme: "dark"
+  default_values:
+    rd_spend: 50000
+    admin_spend: 30000
+    marketing_spend: 40000

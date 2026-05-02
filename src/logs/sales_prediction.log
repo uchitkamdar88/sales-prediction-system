@@ -1,0 +1,9 @@
+2026-05-02 21:05:53,239 - SalesPrediction - WARNING - No saved model found. Training a new model.
+2026-05-02 21:05:53,240 - SalesPrediction - INFO - Starting model training...
+2026-05-02 21:05:53,348 - SalesPrediction - INFO - Loaded 306 rows from E:\All Projects\AI-ML\Python\Sales Prediction System\data\sales_data.csv
+2026-05-02 21:05:53,372 - SalesPrediction - INFO - Feature matrix shape: (306, 9)
+2026-05-02 21:05:53,414 - SalesPrediction - INFO - Using XGBoost regressor.
+2026-05-02 21:05:56,071 - SalesPrediction - INFO - Training metrics: {'r2_score': 0.9998759031295776, 'mae': 57040.83984375, 'rmse': np.float64(99730.56053186505), 'cv_score': np.float64(0.9998854875564576)}
+2026-05-02 21:05:56,140 - SalesPrediction - INFO - Model saved to E:\All Projects\AI-ML\Python\Sales Prediction System\models\trained_model.pkl
+2026-05-02 21:05:56,171 - SalesPrediction - INFO - Versioned model saved to E:\All Projects\AI-ML\Python\Sales Prediction System\models\model_20260502_210556.pkl
+2026-05-02 21:09:43,848 - SalesPrediction - INFO - Batch prediction completed for 3 rows.
